@@ -13,7 +13,7 @@ import { TestPageComponent } from './components/test-page/test-page.component';
     TestPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
